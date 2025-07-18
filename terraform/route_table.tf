@@ -1,6 +1,6 @@
 # Public Route Table 1
 resource "aws_route_table" "public_1" {
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc.id
 
     tags = {
         Name = "${var.app_name}-rt-public-1"
@@ -22,7 +22,7 @@ resource "aws_route_table_association" "public_1" {
 
 # Public Route Table 2
 resource "aws_route_table" "public_2" {
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc.id
 
     tags = {
         Name = "${var.app_name}-rt-public-2"
@@ -44,7 +44,7 @@ resource "aws_route_table_association" "public_2" {
 
 # private route table 1
 resource "aws_route_table" "private_1" {
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc.id
 
     tags = {
         Name = "${var.app_name}-rt-private-1"
@@ -66,7 +66,7 @@ resource "aws_route_table_association" "private_1" {
 
 # private route table 2
 resource "aws_route_table" "private_2" {
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc.id
 
     tags = {
         Name = "${var.app_name}-rt-private-2"
