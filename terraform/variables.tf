@@ -16,6 +16,7 @@ variable "private_subnets" {
 }
 
 variable "availability_zones" {
-    default = ["us-southeast-1a", "us-southeast-1b"]
+    default = ["ap-southeast-1a", "ap-southeast-1b"]
     description = "The list of availability zones"
 }
+
