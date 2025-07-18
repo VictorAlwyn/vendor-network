@@ -1,6 +1,6 @@
 variable "aws_region" {}
 
-variable "app_bame" {
+variable "app_name" {
     default = "vendor-network"
     description = "The name of the application"
 }
